@@ -4,10 +4,10 @@ MAINTAINER Abdul M. Hanafi <amunifhanafi@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN sed -i 's/archive.ubuntu.com/kambing.ui.ac.id/g' /etc/apt/sources.list
+#RUN sed -i 's/archive.ubuntu.com/kambing.ui.ac.id/g' /etc/apt/sources.list
 RUN apt-get update
 
-# install http
+# install apache
 RUN apt-get install -y apache2 vim bash-completion
 RUN mkdir -p /var/lock/apache2 /var/run/apache2
 
